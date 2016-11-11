@@ -38,7 +38,7 @@ namespace RelationshipManyToMany.Controllers {
             private $state: ng.ui.IStateService) {
             this.MovieResource = $resource("/api/movies/:id");
             this.getMovie($stateParams['id']);
-            console.log(this.movie);
+            //console.log(this.movie);
         }
 
     }
