@@ -1,0 +1,17 @@
+<h2>Home</h2>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Movie List</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="movie in controller.movies">
+            <td>{{movie.title}}</td>
+            <td>
+                <a href="/addActorToMovie/{{movie.id}}" class="btn btn-primary">Add An Actor</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
